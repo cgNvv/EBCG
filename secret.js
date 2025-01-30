@@ -24,17 +24,24 @@ window.onload = function() {
         alert("Contract address copied to clipboard!");
     });
 
+    // Show helper text immediately for 0.5 seconds
+    helperText.textContent = "Here you idiot!";
+    helperText.style.opacity = '1';
+    setTimeout(() => {
+        helperText.style.opacity = '0';
+    }, 500);
+
     // Show hint after 7 seconds
     setTimeout(() => {
         hint.style.opacity = '1';
         hint.textContent = "Find the Address to the Bank on this page";
     }, 7000);
 
-    // Show hidden button and helper text after 12 seconds
+    // Show hidden button and helper text permanently after 20 seconds
     setTimeout(() => {
         hiddenButton.style.opacity = '0.9';
         hiddenButton.textContent = "Contract Address";
         helperText.style.opacity = '1';
         helperText.textContent = "Here you idiot!";
-    }, 15000);
+    }, 20000);
 } 
