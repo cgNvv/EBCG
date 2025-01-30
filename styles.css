@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Share Tech Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.matrix-text {
+    color: #00ff00;
+    font-size: 2em;
+    margin: 20px 0;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.bank-image {
+    max-width: 400px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 1s;
+    border-radius: 10px;
+    opacity: 0;  /* Start hidden */
+}
+
+.bank-image:hover {
+    transform: scale(1.05);
+}
+
+.hidden-button {
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s;
+    background-color: #00ff00;
+    border: 2px solid #00ff00;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.hint {
+    color: #00ff00;
+    font-size: 1.5em;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.helper-text {
+    position: fixed;
+    top: 220px;
+    right: 100px;
+    color: #00ff00;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-shadow: 0 0 10px #00ff00;
+    width: 200px;
+    text-align: center;
+} 
