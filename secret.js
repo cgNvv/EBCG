@@ -21,6 +21,7 @@ window.onload = function() {
     hiddenButton.addEventListener('click', () => {
         const contractAddress = "5M1pQzET7hQAE91C6RPgHbHLyrcSucFW3orFn9GRpump";
         navigator.clipboard.writeText(contractAddress);
+        alert("Contract address copied to clipboard!");
         window.location.href = 'share.html';
     });
 
