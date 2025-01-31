@@ -21,7 +21,7 @@ window.onload = function() {
     hiddenButton.addEventListener('click', () => {
         const contractAddress = "5M1pQzET7hQAE91C6RPgHbHLyrcSucFW3orFn9GRpump";
         navigator.clipboard.writeText(contractAddress);
-        alert("Contract address copied to clipboard!");
+        window.location.href = 'share.html';
     });
 
     // Show helper text immediately for 0.5 seconds
@@ -40,7 +40,7 @@ window.onload = function() {
     // Show hidden button and helper text permanently after 20 seconds
     setTimeout(() => {
         hiddenButton.style.opacity = '0.9';
-        hiddenButton.textContent = "Contract Address";
+        hiddenButton.textContent = "5M1pQzET7hQAE91C6RPgHbHLyrcSucFW3orFn9GRpump";
         helperText.style.opacity = '1';
         helperText.textContent = "Here you idiot!";
     }, 20000);
